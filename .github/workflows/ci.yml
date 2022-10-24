@@ -12,8 +12,9 @@ jobs:
 
       - name: Install and Build
         run: |
+          npm install -g pnpm
           pnpm install
-          pnpm run build --base=/north-spacex/
+          pnpm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
